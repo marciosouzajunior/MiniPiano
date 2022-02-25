@@ -4,60 +4,8 @@
              x:Class="MiniPiano.MainPage">
 
     <ScrollView>
-        
-        <AbsoluteLayout x:Name="pianoLayout"
-                        BackgroundColor="Black">
-           
-            <!--
-            <BoxView AbsoluteLayout.LayoutBounds="0,0,1,100"
-                       AbsoluteLayout.LayoutFlags="WidthProportional"
-                       BackgroundColor="White">
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Button_Clicked"/>
-                </BoxView.GestureRecognizers>
-            </BoxView>
 
-            <BoxView AbsoluteLayout.LayoutBounds="0,100,1,100"
-                       AbsoluteLayout.LayoutFlags="WidthProportional"
-                       BackgroundColor="White">
-                <BoxView.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Button_Clicked"/>
-                </BoxView.GestureRecognizers>
-            </BoxView>
-
-           
-            <Rectangle AbsoluteLayout.LayoutBounds="1,75,0.6,50"
-                       AbsoluteLayout.LayoutFlags="WidthProportional,XProportional"
-                       BackgroundColor="Black"
-                       Stroke="Black">
-                <Rectangle.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Button_Clicked"/>
-                </Rectangle.GestureRecognizers>
-            </Rectangle>
--->
-            
-            <!--
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>            
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-            <Frame BorderColor="Black" CornerRadius="0"></Frame>
-
-            <Frame BorderColor="Black" BackgroundColor="Black" CornerRadius="0" HeightRequest="50" VerticalOptions="End" Margin="0,0,0,-50"></Frame>
-            -->
-        </AbsoluteLayout>
-        
+        <AbsoluteLayout x:Name="pianoLayout" BackgroundColor="Black"/>
         
     </ScrollView>
 
