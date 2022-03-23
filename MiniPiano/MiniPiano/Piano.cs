@@ -10,11 +10,12 @@ namespace MiniPiano
 {
     public class Piano : IPiano
     {
-
+        //
         // White keys
+        //
         ISimpleAudioPlayer A0 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
         ISimpleAudioPlayer B0 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
-        
+
         ISimpleAudioPlayer C1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
         ISimpleAudioPlayer D1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
         ISimpleAudioPlayer E1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
@@ -73,16 +74,66 @@ namespace MiniPiano
 
         ISimpleAudioPlayer C8 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
 
+        //
         // Black keys
+        //
+        ISimpleAudioPlayer Bb0 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb1 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db2 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb2 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb2 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab2 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb2 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db3 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb3 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb3 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab3 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb3 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db4 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb4 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb4 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab4 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb4 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db5 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb5 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb5 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab5 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb5 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db6 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb6 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb6 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab6 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb6 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db7 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Eb7 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Gb7 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Ab7 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+        ISimpleAudioPlayer Bb7 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
+
+        ISimpleAudioPlayer Db8 = CrossSimpleAudioPlayer.CreateSimpleAudioPlayer();
 
         public Piano()
         {
 
             var assembly = typeof(App).GetTypeInfo().Assembly;
 
+            //
+            // White keys
+            //
             A0.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.A0.mp3"));
             B0.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.B0.mp3"));
-        
+
             C1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.C1.mp3"));
             D1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.D1.mp3"));
             E1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.E1.mp3"));
@@ -141,13 +192,85 @@ namespace MiniPiano
 
             C8.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.C8.mp3"));
 
+            //
+            // Black keys
+            //
+            Bb0.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb0.mp3"));
+
+            Db1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db1.mp3"));
+            Eb1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb1.mp3"));
+            Gb1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb1.mp3"));
+            Ab1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab1.mp3"));
+            Bb1.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb1.mp3"));
+
+            Db2.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db2.mp3"));
+            Eb2.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb2.mp3"));
+            Gb2.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb2.mp3"));
+            Ab2.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab2.mp3"));
+            Bb2.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb2.mp3"));
+
+            Db3.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db3.mp3"));
+            Eb3.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb3.mp3"));
+            Gb3.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb3.mp3"));
+            Ab3.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab3.mp3"));
+            Bb3.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb3.mp3"));
+
+            Db4.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db4.mp3"));
+            Eb4.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb4.mp3"));
+            Gb4.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb4.mp3"));
+            Ab4.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab4.mp3"));
+            Bb4.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb4.mp3"));
+
+            Db5.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db5.mp3"));
+            Eb5.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb5.mp3"));
+            Gb5.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb5.mp3"));
+            Ab5.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab5.mp3"));
+            Bb5.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb5.mp3"));
+
+            Db6.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db6.mp3"));
+            Eb6.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb6.mp3"));
+            Gb6.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb6.mp3"));
+            Ab6.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab6.mp3"));
+            Bb6.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb6.mp3"));
+
+            Db7.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db7.mp3"));
+            Eb7.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Eb7.mp3"));
+            Gb7.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Gb7.mp3"));
+            Ab7.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Ab7.mp3"));
+            Bb7.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Bb7.mp3"));
+
+            Db8.Load(assembly.GetManifestResourceStream("MiniPiano.Sounds.Db8.mp3"));
+
         }
 
+        public string[] WhiteKeys => new string[]{
+            "A0", "B0",
+            "C1", "D1", "E1", "F1", "G1", "A1", "B1",
+            "C2", "D2", "E2", "F2", "G2", "A2", "B2",
+            "C3", "D3", "E3", "F3", "G3", "A3", "B3",
+            "C4", "D4", "E4", "F4", "G4", "A4", "B4",
+            "C5", "D5", "E5", "F5", "G5", "A5", "B5",
+            "C6", "D6", "E6", "F6", "G6", "A6", "B6",
+            "C7", "D7", "E7", "F7", "G7", "A7", "B7",
+            "C8"
+            };
+
+        public string[] BlackKeys => new string[]{
+            "Bb0",
+            "", "Db1", "Eb1", "", "Gb1", "Ab1", "Bb1",
+            "", "Db2", "Eb2", "", "Gb2", "Ab2", "Bb2",
+            "", "Db3", "Eb3", "", "Gb3", "Ab3", "Bb3",
+            "", "Db4", "Eb4", "", "Gb4", "Ab4", "Bb4",
+            "", "Db5", "Eb5", "", "Gb5", "Ab5", "Bb5",
+            "", "Db6", "Eb6", "", "Gb6", "Ab6", "Bb6",
+            "", "Db7", "Eb7", "", "Gb7", "Ab7", "Bb7",
+            "", "Db8"
+            };
 
         public void Play(string note)
         {
             // Reflection
-            ISimpleAudioPlayer player = (ISimpleAudioPlayer) GetType()
+            ISimpleAudioPlayer player = (ISimpleAudioPlayer)GetType()
                 .GetField(note, BindingFlags.NonPublic | BindingFlags.Instance)
                 .GetValue(this);
             player.GetType().GetMethod("Play").Invoke(player, null);
